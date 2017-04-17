@@ -19,16 +19,5 @@ public class Main extends PluginBase implements Listener {
 		instance = this;
 	}
 
-	@EventHandler
-	public void onChat(PlayerChatEvent ev) {
-		if (ev.getMessage().contains("#")) {
-			String message = ev.getMessage();
-			String[] str = ev.getMessage().split("#");
-			for (int i = 1; i < str.length; i++) {
-				String name = str[i].split(" ", 1)[0];
-				Server.getInstance().getPlayer(name);
-				message.replace("#"+name, "§l§b"+Server.getInstance().getPlayer(name).getName()+"§r");
-			}
-		}
-	}
+	
 }
