@@ -13,15 +13,7 @@ public class CookieRunOption extends Command {
 		if (!sender.isOp()) {
 			sender.sendMessage("당신은 해당 명령어를 사용할 권한이 없습니다");
 		}
-		switch (args[0]) {
-		case value:
-			
-			break;
 
-		default:
-			break;
-		}
-		return false;
 	}
 
 }
